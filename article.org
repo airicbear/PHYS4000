@@ -1,0 +1,311 @@
+#+TITLE: Article
+
+* Keywords
+
+stars: evolution, binaries: general, galaxies: high-redshift, galaxies: stellar, content, reionization
+
+* Abstract
+
+The observable characteristics and subsequent evolution of young stellar populations is dominated by their massive stars.
+As our understanding of those massive stars and the factors affecting their evolution improves, so our interpretation of distant, unresolved stellar systems can also advance.
+As observations increasingly probe the distant Universe, and the rare low-metallicity starburst nearby, so the opportunity arises for these two fields to complement one another and leads to an improved conception of both stars and galaxies.
+Here, we review the current state of the art in modeling of massive star-dominated stellar populations and discuss their applications and implications for interpreting the distant Universe.
+Our principal findings include the following:
+
+- Binary evolutionary pathways must be included to understand the stellar populations in early galaxies.
+
+- Observations constraining the extreme ultraviolet spectrum of early galaxies are showing that current models are incomplete.
+  The best current guess is that some form of accretion onto compact remnants is required.
+
+- The evolution and fates of very massive stars, on the order of 100 \(M_\odot\) and above, may be key to fully understand aspects of early galaxies.
+
+* Introduction
+
+The nature and condition of galaxies are predominantly determined by studying the light emitted by their stellar content.
+This has been true since the beginning of their study when Hubble (1929) determined the distance to M31 using the properties of individual stars, thus revealing the true nature of galaxies as other island universes like our own Milky Way Galaxy.
+Since that time, our understanding of galaxies has evolved and expanded, and its interpretation has reached a level of complexity that requires a detailed understanding of stellar structure and evolution, stellar atmospheres, and star formation.
+
+The theory of stellar structure and evolution allows us to calculate the luminosity, surface temperatures, and gravities of stars with different masses and composition, and the length of time they exist with these parameters.
+The modeling of stellar atmospheres yields the electromagnetic spectrum emitted by stars with these surface parameters.
+Our understanding of star formation reveals the number of each of these stars we expect to be born by collapsing gas clouds.
+Combining these elements predicts the emission of light from a stellar population for comparison with that observed from galaxies and thus, in theory, reveals their ages, star-formation histories, and metallicities.
+This is particularly important for young stellar populations, whose light is dominated by massive \((M \gtrsim 10 M_\odot)\) stars.
+
+It is in the most massive, most luminous but shortest-lived stars that small changes in the assumed physics of stellar models can have the largest impact on the surface properties of the stars, the star's effect on their surroundings, and thus the interpretation of data.
+Their lives and deaths input tremendous amounts of radiative and kinetic energy into galactic environments.
+Not only do they have the highest luminosities of all stars and have strong stellar winds but they are also the hottest stars, producing most of their light in the far-ultraviolet (FUV) region of the magnetic spectrum.
+They emit substantial amounts of radiation shortward of 912 Å, which ionizes surrounding hydrogen gas and powers the nebular emission of \(\text{H}_\text{II}\) regions.
+In their deaths, when the core collapses to a neutron star or black hole, further energy and nucleosynthesis products are released in a supernova.
+These likely pollute the environments of the first stellar halos with metals and provide the kinetic energy input to drive galaxy-scale outflows.
+If the compact remnants retain an orbiting companion after the supernovae, they can go on to accrete from this star and produce strong X-ray emission, again irradiating their host galaxies.
+At each stage of their lives and deaths, they produce observable signatures in the light of their stellar populations.
+
+The earliest works attempting to synthesize stellar evolution, stellar atmosphere, and star-formation theory, with a focus on massive stars, into models for comparison with galaxy data are outlined by Tinsley (1968, 1971), Spinrad & Taylor (1971), and others.
+The field took a significant step forward with the application of growing computational resources around the beginning of the twenty-first century.
+These permitted the creation of population and spectral synthesis codes such as =Starburst99= (Leitherer et al. 1999) and the =GalaxEv= models of Bruzual & Charlot (2003).
+Here again, the method of combining different strands of astrophysics was applied but with computers now able to take on the number crunching of detailed stellar structure models rather than relying on analytic formalisms and simple models for evolution of stars on the Hertzsprung--Russell (HR) diagram.
+The detail and depth of such synthetic spectral models provided a crucial tool to reveal the history of the ever-larger samples of galaxies being revealed in the growing catalog of observational data (e.g., Brinchmann et al. 2004).
+
+However, it has become apparent that these models, while extremely valuable, were incomplete.
+Unlike galaxies in the nearby Universe, galaxies at the highest redshifts were dominated by stellar populations that were not well described, with synthetic spectra unable to reproduce high-ionization spectral features such as the \(\text{H}_\text{eII}\) and \(\text{C}_\text{II}\) stellar wind lines (Shapley et al. 2003).
+As the observational frontier pushed into the first gigayear of galaxy evolution it also highlighted the problem of where the ionizing photons responsible for reionizing the Universe at the end of the cosmic dark ages came from (e.g., Bunker et al. 2004, Striavelli et al. 2004).
+The extant models of the time struggled to produce sufficient hard radiation to permit galaxies to ionize their surroundings without assuming extremely high-ionizing photon escape fractions and steep luminosity functions.
+This presented a problem as other sources such as active galactic nuclei (AGNs) were already known to have a low number density at the epoch of reionization (EoR) (Dijkstra et al. 2004).
+
+Theorists soon rose to the challenge with two stellar-evolution-motivated solutions being put forward.
+First, it was discovered that many massive stars experience rotation rapid enough to affect their evolution.
+This leads them to become hotter and more luminous than a nonrotating star, with extended main sequence lifetimes (e.g., see Maeder & Meynet 200, Ekström et al. 2012, and references therein).
+Second, it was found that interactions between stellar components in binary star systems could significantly alter the evolution of massive stars (e.g., see De Marco & Izzard 2017, Eldridge et al. 2017, and references theirin).
+Again, the primary effect of binary evolution was to produce more luminous and hotter stars.
+In both cases, the result is to boost the ionizing photon flux inferred for a population based on its optical and UV photometry, and also make the FUV radiation harder.
+However, both of these effects are relatively difficult to identify with the limited data available for distant galaxies, so determination of which effect was the correct interpretation was challenging.
+
+The deadlock was effectively broken by determination of the binary fraction of massive stars.
+
+The latest population and spectral synthesis models that use either theoretical or empirical initial binary parameter distributions produce a good match to observed stellar populations, providing strong evidence that binary stars must be accounted for in any model stell populations (e.g., Steidel et al. 2016).
+
+However, though the current state-of-the-art population synthesis models have begun to more closely reproduce the observable properties of galaxies across cosmic time, there are still several places where a mismatch exists.
+
+This mixture of success in interpreting observational data and remaining challenges has also been complemented by a new source of constraints on stellar evolution theory.
+
+These discoveries require a rethink of the ways in which the young and massive stellar populations, which dominate at early cosmic times and in some local environments, are modeled.
+
+* The Challenge of Population Synthesis
+
+In the very local Universe, the impact of physics on the evolution and spectral contributions of individual massive stars can be identified through direct observation of the stellar light, their death in supernovae, or the remnants they leave behind.
+At cosmological distances, however, resolving individual stars is usually impossible, and instead analyses are based on the integrated light of entire stellar populations.
+
+As a result, it is necessary to combine state-of-the-art models for individual massive stars with those for lower-mass stars, and to match these models with calculated spectra that describe their expected emission.
+This process is known as population and spectral synthesis and has a long history dating back at least as far as the pioneering work of Beatrice Tinsley (1968).
+For more technical detail on the population synthesis process, we refer readers to the relatively recent review by Conroy (2013).
+
+** Summary
+
+A population and spectral synthesis requries the following four key ingredients:
+
+1. Stellar evolution models at sufficient mass resolution to capture behavior at key ages and mass ranges.
+   If modeling multiple systems, these must also span a full range of multiple parameters and track the binary evolution.
+
+2. A parameterization for the initial properties of the population, including composition (metallicity, relative elemental abundances), distribution in mass (i.e., the initial mass function or IMF), rotation (initial velocity, angular momentum loss or gain), and multiplicity parameters (initial period, multiple fraction, initial mass ratios) where appropriate.
+
+3. Electromagnetic spectra as predicted from stellar atmosphere models, as a function of surface temperature, surface gravity, composition, and assumed stellar wind parameters, at sufficient resolution for comparison with observations.
+
+4. Prescriptions for supernovae, remnants, and the evolution of multiples containing remnants.
+
+It must generate one or more of the following outputs:
+
+1. The integrated light electromagnetic spectrum of the modeled SSP as a function of age.
+
+2. The number counts and total masses of living stars at each time step (optional).
+
+3. Supernova and other transient event rates (optional).
+
+4. Reprocessing of starlight by dust or nebular gas (optional).
+
+* Recent Developments in Stellar Evolution Theory
+
+** The Initial Conditions
+
+Below, we describe how the different initial parametrs are important for stellar population models.
+We refer to a fiducial stellar population using the BPASS v2.2.1 SPS model, assuming an SSP star-formation history and an IMF that is a broken power law of \(\alpha = -1.30\) for \(0.1 < M < 0.5 M_\odot\) or \(\alpha = -2.35\) for \(0.5 < M < 300 M_\odot\).
+
+*** The initial mass function
+
+A significant factor in the impact of stars on galaxies is the relative fractions of different types of stars in any given stellar populations.
+The initial conditions for star formation, predominantly manifest through the IMF, are key to estimating the number of stars in a population as a function of mass and, thus, calculating stellar contributions to the luminous, mechanical, and nucleosynthetic outputs to a galaxy (see the sidebar titled Commonly Used Stellar Initial Mass Functions).
+
+*** Initial stellar rotation and binary parameters
+
+If rotation or duplicity is present in a stellar population, then extra initial parameters are required.
+The simplest parameter sets the number of primary stars at each mass that are in binaries: the mass-dependent binary fraction.
+We also require an initial period distribution, initial eccentricity, and the initial mass ratio of the two stars; these are also typically mass-dependent, and the mass ratio distribution may further depend on the period.
+We note that Hurley et al. (2002) determined that the period and eccentricity can be combined into a semilatus rectum distribution to reduce the number of initial parameters required.
+Other factors that can be added if more complexity is required include the initial spins and orientation of the two stars.
+Thus, the initial assumptiosn going into creating synthetic stellar populations begin to grow in number (see Moe & Di Stefano 2017 for further details).
+Significant advances have been made in showing that the most massive stars are nearly all in binary star systems and accurately determining the initial binary fraction, period distribution, and mass ratios (Sana et al. 2012, Moe et al. 2019).
+These are currently implemented in the detailed binary population spectral synthesis code =BPASS=, in the models of Götberg et al. (2019), and in several population synthesis codes but not in the other spectral synthesis codes that include interacting binary stars.
+
+*** Initial composition
+
+After its initial mass, the metallicity of a star is the next most important factor in how it will evolve throughout its life.
+The composition affects a star's evolution through the strength of the stellar winds and the catalysis of hydrogen fusion.
+Of primary importance is iron, which makes a large contribution to opacity in stellar interiors.
+This sets the strength of the mass loss of radiatively driven winds (e.g., Vink et al. 2001).
+Its abundant electron transitions generate many weak absorption lines, making stellar material opaque and, thus, able to interact with the radiation field to accelerate material away from the surface.
+To a lesser extent, this opacity also causes stellar radius to increase with iron abundance, i.e., the logarithm of the iron abundance ratio, again due to radiation pressure.
+This slightly lowers the surface gravity of stars at higher metallicities.
+
+** Mass-Loss Rates in Stellar Winds
+
+All stars loss mass in a stellar wind driven by either metal line opacity or the balance between radiation pressure and gravitational attraction at their surface.
+In general, the more luminous a star, the stronger that wind.
+While, on the main sequence, mass loss is moderate, the strength of mass loss increases thereafter, whether the star evolves to become a cool red supergiant or a hot Wolf-Rayet (WR) star.
+For the former, the low surface gravity accelerates the rate at which mass can be lost.
+For WR stars, increased mass loss arises from a combination of high luminosity-to-mass ratios, which result from prior mass loss reducing a star to its helium core, and an iron-opacity bump at a temperature of \(10^5 \text{ K}\), causing significant opacity near the surface layers of these stars.
+This means that winds are metallicity dependent, most sensitively on the initial iron abundance of the star (see the sidebar Metallicity Dependence of Winds).
+Lower-metallicity stars like those found in early galaxies typically have weaker winds.
+
+** Rotation
+
+The simplest model of a star assumes it to be single and nonrotating.
+For such stars, assumptiosn such as hydrostatic and local thermodynamic equilibrium can be made during evolutionary phases driven by the early nuclear fusion reactions of hydrogen and helium burning.
+However, when the star rotates, the hydrostatic balance is altered by a centrifugal force, causing the equator to bulge outward.
+This upsets the local thermodynamic equilibrium; Eddington--Sweet currents are induced, producing extra mixing through radiative zones in the stellar interior, and so nuclear processed and unprocessed material can be mixed out of and into the stellar core.
+This alters surface abundances to become nitrogen rich and mixes fresh hydrogen into the core to extend the stellar lifetime (e.g., Ekström et al. 2012, Choi et al. 2016).
+Although this simple concept has been known for some time, more recent work has investigated how rotation interacts with magnetic fields and how differential rotation can further enhance the strength of mixing.
+The physics is exceedingly complex (e.g., Maeder & Meynet 2005, Potter et al. 2012), especially considering that this inherently two-dimensional object is usually implemented within a one-dimensional stellar evolution code.
+Two-dimensional stellar evolution codes (e.g., Rieutord et al. 2016) are rare and relatively slow, making construction of large model grids difficult.
+
+** Binary and Multiple Stars
+
+The majority of stars exist in binary systems, triple systems or higher-order multiples.
+
+*** The road to understanding the importance of binaries
+
+Historically, the study of binary and multiple stars and their importance in stellar populations of massive stars has been largely ignored, even though there has always been strong evidence that many stars are in binary or multiple systems.
+It was known early on that WR stars were helium stars, formed by loss of the hydrogen layers from massive stars.
+The exact mechanism of mass loss was uncertain, although Paczynski (1967) did initially suggest binary interactions as a possibility.
+However, then stellar winds were investigated and it was suggested that massive stars could lose their hydrogen envelopes through winds alone.
+
+*** Differences introduced by binary interactions
+
+It is important to ask why binary populations are so important and different from the products of single-star evolution.
+The key difference is that no longer are the initial mass, spin, and composition of a star the primary features that determine future evolution.
+Stars can interact with their companion and mass transfer can occur between them.
+The initially more massive star evolves relatively faster and can lose mass by transfer to its companion.
+Angular momentum can also be transferred in this process or through tidal interactions between the two stars if they are sufficiently close.
+
+*** X-ray binaries
+
+An important phase of massive binary evolution occurs after the first supernova.
+Most binary systems become unbound due to the combination of losing a significant amount of mass and the momentum kick received by the compact remnant in the core collapse.
+However, if mass transfer has been efficient so that the companion star is relatively massive, or if the supernova kick is in a specific direciton, the system can remain bound.
+In close binaries, the companion star eventually fills its Roche lobe, and some of its mass will be transferred to the black hole or neutron star that it now orbits.
+The resulting hot accretion disk will be observed as an X-ray binary (XRB) during accretion episodes, but is more challenging to observe in quiescence (Verbunt 1993, Fabbiano 2006).
+Many star-forming galaxies have significant XRB populations, and the total X-ray luminosity can be used as a tracer of moderate-aged stellar populations.
+Detailed study of XRBs and their number are starting to be included within spectral synthesis models (Van Bever & Vanbeveren 2000, Simmonds et al. 2021).
+
+*** Gravitational wave transients
+
+In massive systems, the second star also undergoes core collapse, leading to the formation of a binary compact remnant system.
+The further impact on their host galaxies will be minimal but the eventual merger of such double compact objects provides a novel probe into early stellar populations.
+The substantial evolutionary timescales of these systems require the progenitors of many of today's transient detections to have formed in the distant Universe.
+
+*** Multiple star systems
+
+The different evolutionary pathways that become available to a star when it is a member of a binary system are more numerous than can be fully described in our short introduction here.
+We have aimed here to introduce the most important pathwys for the massive stars that dominate early galaxies.
+
+** Supernovae and Compact Remnants
+
+Supernovae were recognized as dying stars just under a century ago.
+The cataclysmic deaths of stars can inject more energy into the surrounding interstellar medium (ISM), via electromagnetic radiation and kinetic energy, than the Sun will emit over its 10 billion year lifetime.
+Thus, while these events only occur once per star, they have a disproportionate impact, particularly in clearing their local environs of gas through mechanical feedback.
+
+** Very Massive Stars
+
+An important recent advance has already been mentioned a few times above, but we emphasize its important here: an improved appreciation of very massive stars (VMSs) above about \(100 M_\odot\).
+Although such stars are few in number, their high luminosity means they have a dramatic impact on their surrounding environment through both their high luminosity and their final supernovae, which may be PISN events, SLSNe, or long RGBs if they are members of a binary system.
+
+** Comparing Their Impacts
+
+When it comparing the importance of the above factors, the most significant factors are rotation and binary interactions.
+We can see in *Figures 1* and *2* that differences between the different single-star tracks considered are relatively minor, although differences in convective core sizes and interior mixing profiles as found by Pedersen et al. (2021) and Johnston (2021) may make greater differences.
+However, these variations are unable to cause variations as large as those due to binary interactions.
+For example, we can see that interacting binary stars create hot WR stars at masses that cannot be made by single-star models.
+We note the observational signature of these low-mass WR stars will be different than those typically observed (Götberg et al. 2018).
+
+** Summary
+
+1. Areas including the initial parameter distribution of stars, the impact of binary evolution, and the mass loss rates due to stellar winds have shown significant advances in recent years.
+   Nonetheless, significant differences remain between the evolution of stars modeled with different physical assumptions.
+
+2. Observations, ranging from detailed studies of individual stars to the new field of GW astrophysics, are providing increasingly strong constraints on massive star evolution pathways.
+
+3. Different stellar mass ranges can be traced by different observational indicators.
+
+* Massive Stars in the Universe
+
+** Star-Formation Histories and Star-Formation Rates
+
+Some of the most fundamental properties of galaxies are their masses and current SFRs.
+These are commonly tabulated and released as "value-added" output of extragalactic surveys.
+
+** The Distant Universe as a Testbed
+
+An area in which uncertainties regarding the impact of massive stars has come to the fore in recent years is in the study of the distant Universe.
+Stellar populations at high redshift are often first identified by their UV emission, modified by absorption due to neutral hydrogen in the intergalactic medium (IGM) to show a distinctive Lyman break (Guhathakurta et al. 1990, Steidel et al. 1995).
+This, combined with the short timescales available for galaxy evolution at high redshift, means that the stellar populations observed in the distant Universe are typically very young, and their emission is dominated by massive stars.
+Other recent reviews provide a thorough survey of the high-redshift Universe (e.g., Förster Schreiber & Wuyts 2020, Ouchi et al. 2020).
+Here, we focus on properties that either are affected by or affect in turn our understanding of the evolution of massive stars.
+
+** The Epoch of Reionization
+
+The IGM is formed from a complex cosmic web of gas clouds.
+These are largely comprised of hydrogen gas, whether unprocessed since the Big Bang nucleosynthesis or enriched to some extent by metals expelled in winds from galaxies.
+In the immediate aftermath of recombination (when protons and electrons first combined to form atoms), the IGM was predominantly neutral.
+At the current time, however, the IGM is predominantly ionized, with only the densest clouds remaining predominantly neutral.
+The phase transition between these neutral and ionized states occurred during the EoR.
+
+** The Ionizing Photon Production Efficiency
+
+The ionizing photons responsible for reionizing the Universe are those emitted at rest-frame wavelengths shortward of 912 Å.
+Due to the long sightlines to the distant Universe, these wavelengths are totally absorbed by intervening neutral hydrogen gas.
+As a result, the ionizing continuum can only be observed directly in very rare cases known as Lyman continuum leakers.
+Instead, observations taken longward of the Lyman break are typically used to infer the strength of ionizing radiation.
+
+** The Escape Fraction of Lyman Continuum Photons
+
+An alternative to increasing the inferred photon production efficiency is to permit a higher fraction of the ionizing photons that are produced to escape from the environs of stellar populations into the IGM without extensive reprocessing and thermalization of their energy by gas or dust.
+The escape fraction can be defined in a variety of functionally similar but technically different ways.
+Theoretically, the escape fraction is given by the ratio of ionizing photons escaping a galaxy's potential well to ionizing photons generated by a stellar population.
+In the context of the distant Univesrse, a relative escape fraction, \(f_\text{esc} = f_\text{esc,Lyc} / f_\text{esc,UV}\), is commonly used, where \(f_\text{esc,UV\) is the fraction of emitted photons escaping their host galaxy in the UV continuum and \(f_\text{esc,LyC}\) is the same quantity for ionizing photons (Steidel et al. 2001).
+This scaling permits an estimate of the ionizing flux, which is somewhat less dependent on the dust extinction in high-redshift galaxies.
+
+** The Ionizing Spectra of Galaxies
+
+Estimates of the ionizing photon efficiency and Lyman continuum escape fraction are most sensitive to photons emitted at wavelengths just short of the hydrogen ionization edge at 912 Å.
+However, the shape of the ionizing spectrum emitted by galaxies is most sensitively probed by an indirect method: analysis of the nebular line emission spectrum of galaxies.
+The relative strength of different lines provides a constraint on the abundance of each ionic species, which allows the ionizing spectrum to be reconstructed.
+
+** Summary
+
+1. The distant Universe provides a testbed for models of the impact of massive stars.
+
+2. Identification of high ionizing photon production efficiencies in young galaxies, particularly at low metallicity, suggests that simple, single-star stellar population models underestimate the ionizing radiation field.
+
+3. Modeling of reionization suggests that binary stellar populations boost the escape fraction of ionizing radiation by opening channels through the ISM.
+
+4. Spectroscopy of distant galaxies suggests that they have hard ionizing radiation fields, hinting at an overabundance of massive stars or at a mechanism to prolong the lives of those stars, such as binary interactions or potentially rotation.
+
+* Uncertainties and Outlook
+
+** Key Uncertainties in Massive Star Evolution
+
+We can be optimistic that we now have a very good understanding of the general evolution of massive stars in early galaxies.
+Model stellar populations that take account of the full range of binary interactions, using recent stellar atmosphere models, reproduce observations of early galaxies well.
+However, there remain areas of disagreement between these model stellar populations and observations that require further study.
+
+** Key Uncertainties in Synthetic Populations
+
+Work to quantify the uncertainties in synthetic populations is an ongoing and iterative process, mostly carried out by comparison with data (e.g., Wofford et al. 2016, D'Agostino et al. 2019, Stanway & Eldridge 2019, Stanway et al. 2020).
+Some sources of uncertainty, such as a galaxy's star-formation history, introduce an inevitable degeneracy with the stellar parameters and must be resolved by fitting.
+Others are intrinsic to the population models.
+There are, perhaps, two important areas in which significant room remains for improvement.
+
+** Theoretical Outlook
+
+Progress is being made on the refinement of mass-loss rates for hot stars, both on the main sequence (e.g., Björklund et al. 2021, Hawcroft et al. 2021, Vink & Sander 2021) and for WR stars (see Vink 2022, in this volume).
+However, these remain uncertain.
+Further clarification of mass-loss rates is important to understand both the evolution of these stars and how much of the mass loss must come from binary interactions.
+An area that is not being studied enough is the mass-loss rates of red supergiants.
+These rates are uncertain, with Beasor et al. (2020) finding they may need significant revision compared to the widely used rates of de Jager et al. (1988).
+Although these stars do not have much impact on their environments themselves, they are possible progenitors of WR stars.
+
+** Observational Outlook
+
+The observational outlook for this area is to a large extent driven by new facilities, as well as new techniques.
+The Atacame Large Millimeter/submillimeter Array (ALMA) has started to generate a growing catalog of galaxies with detections of far-IR emission lines and continuum (e.g., Hashimoto et al. 2019, Vallini et al. 2021).
+The continuum can provide stronger constraints on the dust temperature and properties in distant galaxies than has hitherto been possible, whereas the far-IR line emission will complement that in the UV and near-IR, allowing stronger constraints on both the ionizing spectrum and abundance ratios in distant sources.
+Importantly, ALMA can achieve spatial resolutions comparable with those of optical and near-IR facilities and, so, has the potential to reveal internal structure and variations between components of individual galaxies, particularly when coupled with strong lensing.
+Such work has already begun (e.g., Fujimoto et al. 2021), but its potential has yet to be fully embraced by modelers, and it will likely have a growing impact as sample sizes grow at intermediate to high redshifts, observations become more sensitive, and models are challenged to explain them.
